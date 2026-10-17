@@ -1,0 +1,45 @@
+PIZZA RECIPE — FREE iPHONE OFFLINE APP
+
+WHAT IS INCLUDED
+index.html, app.js, styles.css, sw.js, manifest.webmanifest, and 3 icon PNGs.
+All are needed. No paid service or personal information is required.
+
+PUBLISH FOR FREE USING GITHUB PAGES
+1. Create a free GitHub account at https://github.com if you do not have one.
+   Choose a username that does not reveal your full name, keep your email private,
+   and enable two-factor authentication.
+2. Create a new PUBLIC repository, e.g. pizza-recipe.
+3. Upload the 8 app files from the unzipped pizza-recipe-app folder into the
+   repository's ROOT (not a nested folder). Commit the changes.
+4. Go to repository Settings > Pages. Under Build and deployment, choose
+   Deploy from a branch, main, /(root), then Save.
+5. Wait for the Pages URL, normally https://YOUR-USERNAME.github.io/pizza-recipe/
+   The exact URL is shown under Settings > Pages.
+6. Open that HTTPS URL in Safari on your iPhone while online. Wait until the
+   green 'Offline ready' status appears.
+7. In Safari tap Share > Add to Home Screen > Add. If offered 'Open as Web App',
+   keep it enabled.
+8. Open the new Pizza Recipe Home Screen icon WHILE ONLINE at least once and
+   wait for 'Offline ready' INSIDE THAT INSTALLED APP. This step matters because
+   Safari and Home Screen web apps can have separate storage.
+9. TEST: Switch on Airplane Mode, turn Wi-Fi off, close and reopen the Home
+   Screen app, and change the pizza count. Only rely on offline use after this
+   test succeeds.
+
+UPDATING THE RECIPE
+Replace edited files in the SAME GitHub repository and keep the SAME Pages URL.
+When you change app files, increase the CACHE value in sw.js from
+pizza-recipe-v1 to pizza-recipe-v2 (and update the corresponding cache name
+in app.js if changed). While online, open the app, use Check for recipe updates,
+then close and reopen. Recheck 'Offline ready'.
+
+PRIVACY AND COST
+GitHub Pages is free for public repositories, but the app source and recipe
+are public. Never upload passwords or private data. The app itself has no
+analytics, advertising or third-party dependencies. Your chosen settings are
+stored locally on your device. Hosting and access are free; internet provider
+charges may apply while uploading or fetching updates.
+
+NOTE
+Opening index.html directly from Files will not enable service-worker offline
+caching. You must host it over HTTPS (GitHub Pages is suitable).
